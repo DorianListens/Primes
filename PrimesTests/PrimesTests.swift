@@ -11,37 +11,19 @@ import XCTest
 
 class PrimesTests: XCTestCase {
     
-    let calculator = PrimeCalculator()
-    
-    func testOneIsPrime() {
-        XCTAssertTrue(calculator.prime(1), "One is a prime number")
+    let vc = ViewController()
+    func testViewControllerCanLoad() {
+        vc.loadView()
+        XCTAssert(vc.view != nil)
     }
     
-    
-    func testTwoIsPrime() {
-        XCTAssert(calculator.prime(2), "Two is also a prime number")
+    func testVCReturnsCorrectStringForTwo() {
+        var resultText = vc.isItPrime(2)
+        XCTAssertEqual(resultText, "Yes, 2 is Prime!", "Two is Prime")
     }
     
-    func testFourIsNotPrime() {
-        XCTAssert(!calculator.prime(4), "Four is not a prime number")
+    func testVCReturnsCorrectStringForFifteen() {
+        var resultText = vc.isItPrime(15)
+        XCTAssertEqual(resultText, "No, 15 is not Prime.", "Fifteen isn't Prime")
     }
-    
-    func testFiveIsPrime() {
-        XCTAssert(calculator.prime(5), "Five is prime")
-    }
-    
-    func testTheNextPrimeIsSeven() {
-        XCTAssert(!calculator.prime(6), "Six is not prime")
-        XCTAssert(calculator.prime(7), "seven is prime")
-    }
-    
-    func testFifteenIsNotPrime() {
-        XCTAssertFalse(calculator.prime(15), "Fifteen is not prime")
-    }
-    
-    func testThreeThousandFiveHundredThirtyNineIsPrime() {
-        XCTAssert(calculator.prime(3539), "3539 is prime")
-        XCTAssertFalse(calculator.prime(3521), "3521 is not prime")
-    }
-    
 }

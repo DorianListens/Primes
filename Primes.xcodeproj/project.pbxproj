@@ -15,6 +15,8 @@
 		983EC5791B5D5B2C00670058 /* PrimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983EC5781B5D5B2C00670058 /* PrimesTests.swift */; };
 		983EC5831B5D5BDE00670058 /* PrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983EC5821B5D5BDE00670058 /* PrimeCalculator.swift */; };
 		983EC5841B5D5BDE00670058 /* PrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983EC5821B5D5BDE00670058 /* PrimeCalculator.swift */; };
+		9848462C1B5D697D00042E21 /* PrimeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9848462B1B5D697D00042E21 /* PrimeCalculatorTests.swift */; };
+		9848462D1B5D69F900042E21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983EC5641B5D5B2C00670058 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 		983EC5771B5D5B2C00670058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		983EC5781B5D5B2C00670058 /* PrimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimesTests.swift; sourceTree = "<group>"; };
 		983EC5821B5D5BDE00670058 /* PrimeCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeCalculator.swift; sourceTree = "<group>"; };
+		9848462B1B5D697D00042E21 /* PrimeCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 			children = (
 				983EC5781B5D5B2C00670058 /* PrimesTests.swift */,
 				983EC5761B5D5B2C00670058 /* Supporting Files */,
+				9848462B1B5D697D00042E21 /* PrimeCalculatorTests.swift */,
 			);
 			path = PrimesTests;
 			sourceTree = "<group>";
@@ -227,6 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				983EC5791B5D5B2C00670058 /* PrimesTests.swift in Sources */,
+				9848462C1B5D697D00042E21 /* PrimeCalculatorTests.swift in Sources */,
+				9848462D1B5D69F900042E21 /* ViewController.swift in Sources */,
 				983EC5841B5D5BDE00670058 /* PrimeCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +421,7 @@
 				983EC57E1B5D5B2C00670058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		983EC57F1B5D5B2C00670058 /* Build configuration list for PBXNativeTarget "PrimesTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +430,7 @@
 				983EC5811B5D5B2C00670058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
