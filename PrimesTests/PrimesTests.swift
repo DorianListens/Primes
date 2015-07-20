@@ -11,26 +11,37 @@ import XCTest
 
 class PrimesTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    let calculator = PrimeCalculator()
+    
+    func testOneIsPrime() {
+        XCTAssertTrue(calculator.prime(1), "One is a prime number")
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    
+    func testTwoIsPrime() {
+        XCTAssert(calculator.prime(2), "Two is also a prime number")
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testFourIsNotPrime() {
+        XCTAssert(!calculator.prime(4), "Four is not a prime number")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    func testFiveIsPrime() {
+        XCTAssert(calculator.prime(5), "Five is prime")
+    }
+    
+    func testTheNextPrimeIsSeven() {
+        XCTAssert(!calculator.prime(6), "Six is not prime")
+        XCTAssert(calculator.prime(7), "seven is prime")
+    }
+    
+    func testFifteenIsNotPrime() {
+        XCTAssertFalse(calculator.prime(15), "Fifteen is not prime")
+    }
+    
+    func testThreeThousandFiveHundredThirtyNineIsPrime() {
+        XCTAssert(calculator.prime(3539), "3539 is prime")
+        XCTAssertFalse(calculator.prime(3521), "3521 is not prime")
     }
     
 }
