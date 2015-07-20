@@ -16,14 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIt-Fj-sWW">
-                                <rect key="frame" x="279" y="204" width="95" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNG-VL-Q8d">
-                                <rect key="frame" x="303" y="166" width="77" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNG-VL-Q8d">
+                                <rect key="frame" x="279" y="186" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="DTu-VD-pYn"/>
+                                    <constraint firstAttribute="height" constant="30" id="Gx0-gs-4mZ"/>
+                                </constraints>
                                 <state key="normal" title="is it Prime?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -31,13 +29,59 @@
                                     <action selector="submitButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QFJ-RG-v3C"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IEu-mM-WM1">
-                                <rect key="frame" x="269" y="128" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IEu-mM-WM1">
+                                <rect key="frame" x="272" y="138" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3ks-Qe-WYI"/>
+                                    <constraint firstAttribute="width" constant="97" id="xxT-M2-zHi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PRIMES!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iz3-Nq-w35">
+                                <rect key="frame" x="266" y="41" width="103" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Rfb-rK-NMx"/>
+                                    <constraint firstAttribute="width" constant="103" id="pbD-eY-4sq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter a Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vp-DV-hr6">
+                                <rect key="frame" x="259" y="88" width="121" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Upv-Yr-3ff"/>
+                                    <constraint firstAttribute="width" constant="121" id="eDh-oL-ZrX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIt-Fj-sWW">
+                                <rect key="frame" x="156" y="240" width="313" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="313" id="EMo-SI-mJa"/>
+                                    <constraint firstAttribute="height" constant="49" id="Zxd-Mc-kkZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mNG-VL-Q8d" firstAttribute="top" secondItem="IEu-mM-WM1" secondAttribute="bottom" constant="18" id="FuC-bh-M3e"/>
+                            <constraint firstItem="IEu-mM-WM1" firstAttribute="top" secondItem="9Vp-DV-hr6" secondAttribute="bottom" constant="29" id="H8b-VK-MRF"/>
+                            <constraint firstItem="nIt-Fj-sWW" firstAttribute="top" secondItem="mNG-VL-Q8d" secondAttribute="bottom" constant="24" id="PNv-XD-Qwv"/>
+                            <constraint firstAttribute="centerX" secondItem="Iz3-Nq-w35" secondAttribute="centerX" id="Roj-Gm-zvZ"/>
+                            <constraint firstAttribute="centerX" secondItem="9Vp-DV-hr6" secondAttribute="centerX" id="YEi-AZ-8n3"/>
+                            <constraint firstItem="Iz3-Nq-w35" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="21" id="dtW-Fh-9rN"/>
+                            <constraint firstItem="9Vp-DV-hr6" firstAttribute="top" secondItem="Iz3-Nq-w35" secondAttribute="bottom" constant="19" id="hQn-eA-IsH"/>
+                            <constraint firstAttribute="centerX" secondItem="mNG-VL-Q8d" secondAttribute="centerX" id="mZ3-cM-GTZ"/>
+                            <constraint firstAttribute="centerX" secondItem="nIt-Fj-sWW" secondAttribute="centerX" id="vIi-T2-cPr"/>
+                            <constraint firstAttribute="centerX" secondItem="IEu-mM-WM1" secondAttribute="centerX" id="zsh-9X-T0X"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="numberInput" destination="IEu-mM-WM1" id="hG3-vE-7pJ"/>
